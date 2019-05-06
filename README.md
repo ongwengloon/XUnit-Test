@@ -11,6 +11,7 @@ This project is to run & compare performance for MS Unit Test & XUnit Testing.
 - TestCleanup
 - Serialize
 - Parallelization
+- Mocking Repository Data
 
 ![result](https://github.com/ongwengloon/XUnit-Test/blob/master/Result.png)
 
