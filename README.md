@@ -3,6 +3,7 @@
 This project is to run & compare performance for MS Unit Test & XUnit Testing.
 
 ## Item to be setup, compare and Test :
+BankAccountTest & xBankAccountTest
 - AssemblyInitialize
 - AssemblyCleanup
 - ClassInitialize
@@ -11,6 +12,8 @@ This project is to run & compare performance for MS Unit Test & XUnit Testing.
 - TestCleanup
 - Serialize
 - Parallelization
+
+UserAccountTest & xUserAccountTest
 - Mocking Repository Data
 
 ![result](https://github.com/ongwengloon/XUnit-Test/blob/master/Result.png)
