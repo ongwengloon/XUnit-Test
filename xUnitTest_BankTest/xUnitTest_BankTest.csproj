@@ -83,6 +83,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="xUserAccountTests.cs" />
     <Compile Include="xBankAccountTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

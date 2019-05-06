@@ -41,9 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
-    <Compile Include="IAccount.cs" />
+    <Compile Include="UserContact\IUserContactRepository.cs" />
+    <Compile Include="UserContact\UserContactManager.cs" />
+    <Compile Include="UserContact\UserContactModel.cs" />
+    <Compile Include="UserContact\UserContactRepository.cs" />
+    <Compile Include="UserAccount\IUserAccountRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserAccount.cs" />
+    <Compile Include="UserAccount\UserAccountModel.cs" />
+    <Compile Include="UserAccount\UserAccountRepository.cs" />
+    <Compile Include="UserAccount\UserAccountManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

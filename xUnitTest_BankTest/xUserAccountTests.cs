@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using UnitTest_Bank002;
+using Xunit;
+using Xunit.Abstractions;
+using Xunit.Sdk;
 
 namespace UnitTest_BankTests
 {
-    [TestClass]
-    public class UserAccountTests : IDisposable
+    [Collection("Serialize")]
+    public class xUserAccountTests : IDisposable
     {
         private UserAccountManager userAccountManager;
         private Mock<IUserAccountRepository> userAccountRepository;
         private Mock<IUserContactRepository> userContactRepository;
 
-        [TestMethod]
+        [Fact]
         public void UserAccountGetAccountsTests()
         {
             //Setup
@@ -46,8 +46,8 @@ namespace UnitTest_BankTests
             var expectedResult = new UserAccountModel(1, "Sky", 18, contact);
 
             //Assert
-            Assert.AreEqual(result.Name, expectedResult.Name);
-            Assert.AreEqual(result.Contact.Phone, expectedResult.Contact.Phone);
+            Assert.Equal(result.Name, expectedResult.Name);
+            Assert.Equal(result.Contact.Phone, expectedResult.Contact.Phone);
         }
 
         public void Dispose()

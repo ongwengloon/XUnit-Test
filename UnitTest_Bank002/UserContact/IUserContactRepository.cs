@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace UnitTest_Bank002
 {
-    public interface IAccount
+    public interface IUserContactRepository
     {
-        List<IAccount> GetAccounts();
-        IAccount GetAccounts(int id);
+        UserContactModel GetContacts(int userAccountId);
     }
 }
